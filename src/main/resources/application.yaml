@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: sharecs-service
+    config:
+        import: optional:configserver:http://10.10.10.32:8888/
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: refresh
